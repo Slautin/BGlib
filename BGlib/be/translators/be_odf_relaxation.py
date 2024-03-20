@@ -379,6 +379,8 @@ class BEodfRelaxationTranslator(Translator):
         if basename.endswith('_c'):
             # Old old data format where the folder ended with a _d for some reason
             base_name = basename[:-2]
+        else:
+            base_name = basename
 
         """
         A single pair of real and imaginary files are / were generated for:
